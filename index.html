@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lark & Lavender Luxe Bus Co. — Luxury on Wheels</title>
+  <meta name="description" content="Lark & Lavender Luxury Group INC. DBA Lark & Lavender Luxe Bus Co. — Where Luxury Meets Charm. We deliver with class, precision, and purpose. Book a Luxe Delivery today." />
+  <style>
+    :root{
+      --ink:#1a1630;--lav:#8b6bb2;--lav-light:#b58ed9;--tiffany:#81D8D0;--cloud:#f7f6fb;--card:#ffffff
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;color:var(--ink);background:linear-gradient(180deg,var(--cloud),#fff);line-height:1.6}
+    a{color:var(--tiffany);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    header{position:sticky;top:0;background:#fffcc;backdrop-filter:blur(8px);border-bottom:1px solid #eee;z-index:10}
+    .nav{max-width:1100px;margin:0 auto;display:flex;gap:16px;align-items:center;justify-content:space-between;padding:14px 20px}
+    .logo img{height:60px;border-radius:8px;animation:float 5s ease-in-out infinite}
+    .brand h1{font-size:1.15rem;color:var(--lav);margin:0}
+    .tagline{font-size:.95rem;color:var(--lav);font-style:italic;margin:.1rem 0 0}
+    .menu{display:flex;gap:14px;flex-wrap:wrap}
+    .btn{display:inline-block;background:var(--tiffany);color:#043b38;padding:10px 16px;border-radius:10px;font-weight:700;box-shadow:0 5px 12px rgba(129,216,208,.3);position:relative;overflow:hidden}
+    .btn:hover{box-shadow:0 8px 18px rgba(129,216,208,.5)}
+    .btn::after{content:"";position:absolute;inset:0;transform:translateX(-120%);background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent);}
+    .btn:hover::after{animation:shimmer 1s linear}
+
+    main{max-width:1100px;margin:0 auto;padding:24px 20px}
+    section{margin:28px 0}
+    h2{color:var(--tiffany);text-align:center;margin:12px 0 16px}
+    p,ul{max-width:900px;margin:0 auto 1rem}
+    ul{padding:0 22px}
+    .card{background:var(--card);border:1px solid #eee;border-radius:14px;box-shadow:0 8px 22px rgba(24,8,60,.06);padding:18px}
+    .portal-hero{display:grid;grid-template-columns:1.1fr .9fr;gap:18px;align-items:center}
+    @media (max-width:900px){.portal-hero{grid-template-columns:1fr}}
+    .pill{display:inline-block;background:#efe9fb;color:#4b4370;border-radius:999px;padding:6px 10px;font-weight:700}
+    footer{background:#faf9fe;text-align:center;padding:30px 20px;font-size:.9rem;color:#645d86;border-top:1px solid #eee}
+    footer img{height:50px;margin-bottom:10px;border-radius:8px}
+    .reveal{opacity:0;transform:translateY(14px);transition:all .6s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    @keyframes shimmer{from{transform:translateX(-120%)}to{transform:translateX(120%)}}
+    @keyframes float{0%{transform:translateY(0)}50%{transform:translateY(-4px)}100%{transform:translateY(0)}}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">
+        <img src="ChatGPT Image Oct 24, 2025, 01_30_04 AM.png" alt="Lark & Lavender Luxe Bus Co. Logo" />
+      </div>
+      <div class="brand">
+        <h1>Lark & Lavender Luxury Group INC. • DBA Lark & Lavender Luxe Bus Co.</h1>
+        <div class="tagline">Luxury on Wheels — Purpose in Motion. Where Luxury Meets Charm. We deliver with grace and precision.</div>
+      </div>
+      <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#booking" class="btn">Book Now</a>
+        <a href="#story">Our Story</a>
+        <a href="#team">Join Our Team</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="card portal-hero reveal" style="animation:fadeInUp .8s ease both">
+      <div>
+        <span class="pill">Delivery Booking Portal</span>
+        <h2 style="margin-top:10px">Premium Courier & Logistics for Discerning Clients</h2>
+        <p>Where Luxury Meets Charm — Lark & Lavender Luxe Bus Co. redefines delivery as an experience, not a task. Our services embody grace, precision, and purpose. We specialize in high‑touch, on‑time, white‑glove delivery for pharmacies, law offices, boutiques, senior communities, daycares, and hospitality partners. Each journey reflects our veteran‑grade discipline and signature Tiffany Blue & Lavender presentation — because we don’t just deliver packages, <strong>we deliver with Class.</strong></p>
+        <p class="small">Prefer recurring service instead of one‑off quotes? Start a <strong>Service Agreement Inquiry</strong> below and we’ll craft a tailored plan that matches your organization’s sophistication and standards.</p>
+        <p><a href="#booking" class="btn">Start Service Agreement Inquiry</a></p>
+      </div>
+      <div class="card reveal" id="booking">
+        <h3 style="margin-top:0;color:var(--lav)">Start Service Agreement Inquiry</h3>
+        <form>
+          <label for="company">Company Name</label>
+          <input type="text" id="company" name="company" placeholder="Your company name" required>
+
+          <label for="contact">Contact Name</label>
+          <input type="text" id="contact" name="contact" placeholder="Full name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email address" required>
+
+          <label for="services">Service Needs</label>
+          <textarea id="services" name="services" placeholder="Describe your delivery or logistics needs" required></textarea>
+
+          <button type="submit" class="btn" style="margin-top:15px;">Submit Inquiry</button>
+        </form>
+      </div>
+    </section>
+
+        <!-- OUR STORY -->
+    <section id="story" class="card reveal">
+      <h2>Our Story: A Mission Driven by Service and Safety</h2>
+      <p>The Lark & Lavender Luxury Group, INC. (LLLG) and its operating division, the Luxe Bus Co., were founded not just as a business, but as a direct response to critical community needs. We are a Service-Disabled Veteran-Owned Business (SDVOB), bringing the military values of integrity, precision, and mission-focus to every mile we drive.</p>
+      <h3 style="text-align:center;color:var(--lav)">From Active Duty to Active Community Service</h3>
+      <p>Our story is rooted in the commitment to serve. Founded by U.S. Veteran Byron Jackson and woman-leader Kishami Jackson, LLLG represents a powerful fusion of military discipline and compassionate entrepreneurship.</p>
+      <p>Byron Jackson’s military service instilled a non-negotiable standard for mission completion, logistics management, and safety protocols—principles that now govern the operation of every vehicle in the Luxe Bus Co. fleet. After witnessing systemic transportation gaps in our community, we saw an opportunity to apply this high-level discipline to civilian life.</p>
+      <p>Kishami Jackson brings the vision and operational expertise, ensuring that our services are not only reliable but are delivered with a level of care and luxury that treats every client with the utmost respect.</p>
+      <p>Together, we built Lark & Lavender Luxury Group INC. DBA Lark and Lavender Luxe Bus CO on the belief that access to safe, reliable, and specialized transportation, and delivery service, should never be a barrier to opportunity.</p>
+      <h3 style="text-align:center;color:var(--lav)">The Dual Mission: Safety, Access, and Reliability</h3>
+      <p>The Luxe Bus Co. is dedicated to addressing the most significant transportation challenges in New York State through two core phases:</n></p>
+      <p><strong>Phase 1: Current Focus - Premium Local Delivery and Logistics</strong><br>CURRENTLY OPERATIONAL: We are leveraging our fleet and logistics expertise to provide premium, reliable, and time-sensitive delivery solutions for local businesses and organizations. This initial focus allows us to establish operational infrastructure, build relationships, and maintain the highest safety standards, all while preparing for the launch of our full passenger services.</p>
+      <p><strong>Phase 2: Launching February 2026 - Specialized Passenger Transport</strong><br>COMING FEBRUARY 2026: We are committed to using our full fleet capacity to solve critical passenger access needs. Our expansion will focus on two key areas:</p>
+      <ul>
+        <li><strong>Addressing the Child Care Desert Crisis:</strong> Providing premium, certified transportation solutions for children to and from licensed daycares and learning centers, helping working families overcome logistics barriers.</li>
+        <li><strong>Specialized Veteran and Disabled Adult Transport:</strong> Contracting with state agencies like OPWDD and the DVA to provide crucial access for Veterans and Disabled Young Adults to medical appointments, job training, day programs (ACCES-VR), and independent living activities.</li>
+      </ul>
+      <p>This commitment is supported by our non-profit arm, the Tea Party With a Purpose Foundation, which works to foster community and support for these very same populations.</p>
+      <h3 style="text-align:center;color:var(--lav)">Why Choose a Service-Disabled Veteran-Owned Business?</h3>
+      <ul>
+        <li><strong>Integrity:</strong> We operate with complete transparency and ethical conduct, a standard derived from our military roots.</li>
+        <li><strong>Uncompromising Safety:</strong> Our logistics and fleet maintenance programs are managed with the rigorous precision of an operational command.</li>
+        <li><strong>Mission-Driven:</strong> Our success is measured by the community impact we make—not just the miles we cover.</li>
+      </ul>
+      <p>We are not only building a business with good care and customer service—we are building a legacy. One Community at a time.</p>
+    </section>
+
+    <!-- JOIN OUR TEAM -->
+    <section id="team" class="card reveal" style="max-width:700px;margin:40px auto;padding:30px;text-align:center;">
+      <h2>Join Our Team</h2>
+      <p>We’re always looking for passionate, service-driven individuals to join the Lark & Lavender Luxe Bus Co. family. Please provide your information below and upload your resume.</p>
+      <form id="joinForm">
+        <div class="row">
+          <div>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div>
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+        </div>
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required>
+        <div class="row">
+          <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <label for="resume">Upload Resume</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        <button type="submit" class="btn" style="margin-top:20px;">Submit Application</button>
+      </form>
+      <p id="thankYou" style="display:none;color:var(--lav);margin-top:20px;font-weight:600;">Thank you for your submission!</p>
+    </section>
+  </main>
+
+  <footer>
+    <img src="ChatGPT Image Oct 24, 2025, 01_30_04 AM.png" alt="Lark & Lavender Luxe Bus Co. Logo" />
+    <p>© <span id="y"></span> Lark & Lavender Luxury Group INC. DBA Lark & Lavender Luxe Bus Co. All rights reserved.</p>
+    <section id="contact" style="text-align:center;padding:30px 20px;" class="reveal">
+      <h2>Contact Us</h2>
+      <p>Email us at <a href="mailto:Larkandlavendergroup@gmail.com">Larkandlavendergroup@gmail.com</a> or call us at <a href="tel:5182196317">518‑219‑6317</a>.</p>
+    </section>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    const revealEls=[...document.querySelectorAll('.reveal')];
+    const io=new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target);}})
+    },{threshold:0.12});
+    revealEls.forEach(el=>io.observe(el));
+      const bookingForm = document.querySelector('#booking form');
+    if(bookingForm){
+      bookingForm.addEventListener('submit', function(e){
+        e.preventDefault();
+        const fd = new FormData(bookingForm);
+        const body = `Service Agreement Inquiry%0D%0A%0D%0ACompany: ${encodeURIComponent(fd.get('company')||'')}%0D%0AContact: ${encodeURIComponent(fd.get('contact')||'')}%0D%0AEmail: ${encodeURIComponent(fd.get('email')||'')}%0D%0A%0D%0AService Needs:%0D%0A${encodeURIComponent(fd.get('services')||'')}`;
+        const mail = `mailto:Larkandlavendergroup@gmail.com?subject=${encodeURIComponent('Service Agreement Inquiry — Lark & Lavender Luxe Bus Co.')}&body=${body}`;
+        window.location.href = mail;
+      });
+    }
+
+    const jf = document.getElementById('joinForm');
+    if(jf){
+      jf.addEventListener('submit', function(ev){
+        ev.preventDefault();
+        document.getElementById('thankYou').style.display='block';
+        jf.reset();
+      });
+    }
+  </script>
+</body>
+</html>
